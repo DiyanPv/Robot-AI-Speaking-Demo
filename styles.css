@@ -1,0 +1,48 @@
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+
+}
+
+#img {
+    height: 15%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+#main {
+    offset-position: 1000px;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-before {
+    padding: 20px 10px;
+    width: 30%;
+    font-size: 2em;
+    font-family: 'Poppins';
+    border: none;
+    outline: none;
+    color: #494949;
+    background: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.initial {
+    width: 30%;
+    padding: 20px 10px;
+    transition: 0.3s ease-out;
+    border-radius: 7px;
+}
