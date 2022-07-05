@@ -40,6 +40,9 @@ function computerSpeech(sentenceInput) {
 }
 
 function determineFeedback(input, output) {
+    if (input == '' || input == undefined) {
+        submitBtn.classList.add(`initial`)
+    }
     if (input.includes(`how are you`)) {
         output.text = `I am fine, thank you very much!`
     }
@@ -62,7 +65,7 @@ function determineFeedback(input, output) {
     if (input.includes(`weather today`)) {
         output.text = `Look out of your window please`
     }
-    if (input.includes(`i want a phone`)) {
+    if (input.includes(`I want a phone`)) {
         output.text = `Go buy one from the store nearby!`
     }
     if (input.includes(`sad`)) {
@@ -82,16 +85,27 @@ function determineFeedback(input, output) {
     }
     if (input.includes(`do you have friends`)) {
         output.text = `You are one of my best friends!`
+    } if (input.includes(`are you awesome`)) {
+        output.text = `I am awesome`
+    } if (input.includes(`what should I do now`)) {
+        output.text = `You can do whatever you want to do!`
     }
-    if (input.includes(`should I have friends`)) {
-        output.text = `Be extra careful when choosing your friends!`
+    if (input.includes(`how to become a programmer`)) {
+        output.text = `There is no easy way to do it, you would need to code every day!`
+    }
+    if (input.includes(`i am tired`)) {
+        output.text = `Please take a break!`
+    }
+    if (input.includes(`who are my friends`)) {
+        output.text = `Your friends are the best people I know, stick to them!`
     }
 
+
+
+
+
+
+    submitBtn.addEventListener(`click`, (e) => {
+        recognition.start()
+    })
 }
-
-
-
-
-submitBtn.addEventListener(`click`, (e) => {
-    recognition.start()
-})
