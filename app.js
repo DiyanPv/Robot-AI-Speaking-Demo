@@ -11,9 +11,6 @@ recognition.onstart = function () {
     submitBtn.style.backgroundColor = `gray`
     submitBtn.classList.add(`btn-before`)
 
-
-
-
 }
 
 recognition.onresult = function (e) {
@@ -100,12 +97,8 @@ function determineFeedback(input, output) {
         output.text = `Your friends are the best people I know, stick to them!`
     }
 
-
-
-
-
-
-    submitBtn.addEventListener(`click`, (e) => {
-        recognition.start()
-    })
 }
+
+submitBtn.addEventListener(`click`, (e) => {
+    recognition.start()
+})
